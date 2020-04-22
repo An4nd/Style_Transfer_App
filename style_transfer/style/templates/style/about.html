@@ -1,0 +1,152 @@
+{%extends 'style/base.html'%}
+
+{%load static%}
+
+{%block content%}
+<style>
+.team-style-eleven{
+    background-color:rgb(233, 208, 220);
+}
+    .myclass1{
+        text-align: center;
+        justify-content: center;
+        display: block;
+        align-content: center;
+      padding: 1% 1% 1% 1%;
+      margin: 1% auto 1% auto;
+      width: 50%;
+    
+    }
+    </style>
+
+
+
+
+<div class="container team-style-eleven ">
+    <div class="row ">
+        <div class="col-12">
+            <h3 class="myclass1">Neural Style Tranfer</h3>
+            <p class="title text-center">Neural Style Transfer is the process in which 
+                content of an image and style of another image are combined together to
+                 create a new image. Prisma uses style transfer to transform your photos 
+                 into works of art using style of famous artists.</p>
+
+            <p class="title text-center">We humans generate artwork with different levels of accuracy and complexity. Though the
+                process of creating art could be a very complex process, it can be seen as a combination of
+                the two most important factors, namely, what to draw and how to draw. What to draw is
+                inspired by what we see around us, and how we draw will also take influences from certain
+                things that are found around us. This could be an oversimplification from an artist's
+                perspective, but for understanding how we can create artwork using deep learning
+                algorithms, it is very useful. We have used a deep learning algorithm to take content from
+                one image and then draw it according to a specific artistic style.</p>
+
+
+
+               
+        </div>
+
+        
+        
+
+
+    
+
+
+</div>
+
+<div class="row ">
+    <div class="col-12">
+        <h3 class="myclass1">Why Neural Style Transer</h3>
+        <p class="title text-center">Deep neural networks have already surpassed human level performance
+             in tasks such as object recognition and detection. However, deep networks were lagging far 
+             behind in tasks like generating artistic artefacts having high perceptual quality until recent
+              times. Creating better quality art using machine learning techniques is imperative for reaching
+               human-like capabilities, as well as opens up a new spectrum of possibilities. 
+               And with the advancement of computer hardware as well as the proliferation of deep learning, 
+               deep learning is right now being used to create art. For example, an AI generated art won’t
+             be sold at an auction for a whopping $432,500.</p> 
+     
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-12">
+
+<p class="myclass1"><img src="{%static 'style/images/aboutt/about1.jpeg'%}" height="500" width="500"></p>
+
+</div>
+
+
+<div class="row ">
+    <div class="col-12">
+        <h3 class="myclass1">High Level Architecture</h3>
+        <p class="title text-center">As stated earlier, neural style transfer uses a pretrained 
+            convolution neural network. Then to define a loss function which blends two images seamlessly to 
+            create visually appealing art, NST defines the following inputs:</p> 
+     <ol class="title text-center">
+         <li>A <bold>content image (c) </bold>— the image we want to transfer a style to</li>
+         <li>A <bold>style image (s) </bold>— the image we want to transfer the style from</li>
+         <li>An <bold>input (generated) image (g) </bold>— the image that contains the final result</li>
+
+
+     </ol>
+    </div>
+</div>
+
+
+
+<div class="row ">
+    <div class="col-12">
+        <h3 class="myclass1"></h3>
+        <p class="title text-center"></p> 
+     
+    </div>
+</div>
+
+
+
+
+<div class="row ">
+    <div class="col-12">
+        <h3 class="myclass1"></h3>
+        <p class="title text-center"></p> 
+     
+    </div>
+</div>
+
+
+
+
+<div class="row ">
+    <div class="col-12">
+        <h3 class="myclass1"></h3>
+        <p class="title text-center"></p> 
+     
+    </div>
+</div>
+<div class="row ">
+    <div class="col-12">
+        <h3 class="myclass1">Conclusion</h3>
+        <p class="title text-center">Neural style transfer allows to blend two images 
+            (one containing content and one containing style) together to create new art. 
+            You first went through why you need neural style transfer and an overview of the
+             architecture of the method. Then you defined the specifics of the neural style transfer 
+             network with TensorFlow. Specifically, you defined several functions to define the 
+             variables/inputs, compute the VGG output, compute the losses and perform the optimisation.
+              You next understood the two losses that allow us to achieve what we want; the content loss 
+              and the style loss in detail, and saw how they come together to define the final loss.
+             Finally you ran the model and saw artwork generated by the model.</p>      
+    </div>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+{%endblock%}

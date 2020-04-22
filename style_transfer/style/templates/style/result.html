@@ -1,0 +1,37 @@
+{%extends 'style/base.html'%}
+
+{%load static%}
+
+{%block content%}
+<style>
+
+.myclass1{
+    text-align: center;
+
+    color: cadetblue;
+
+    padding: 100px 100px 100px 100 px;
+
+    margin: 10px 0px 30px 0px;
+
+}
+</style>
+
+<div class="container team-style-eleven ">
+    <div class="row ">
+        <div class="col-12">
+            <h1 class="myclass1">Success</h1>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+
+<p class="myclass1"><img src="{{context.processed.output_url}}" height="350" width="350"></p>
+
+   </div>
+</div>
+</div>
+
+
+{%endblock%}

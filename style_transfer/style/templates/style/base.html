@@ -1,0 +1,254 @@
+{%load static%}
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+    <!--====== Title ======-->
+    <title>Neural Style Transfer</title>
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="{% static 'images/favicon.png'%}" type="image/png">
+        
+    <!--====== Magnific Popup CSS ======-->
+    <link rel="stylesheet" href="{%static 'style/css/magnific-popup.css'%}">
+        
+    <!--====== Slick CSS ======-->
+    <link rel="stylesheet" href="{% static 'style/css/slick.css' %}">
+        
+    <!--====== Line Icons CSS ======-->
+    <link rel="stylesheet" href="{% static 'style/css/LineIcons.css' %}">
+        
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="{%static 'style/css/bootstrap.min.css'%}">
+    
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="{% static 'style/css/default.css' %}">
+    
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="{% static 'style/css/style.css' %}">
+    
+</head>
+
+<body>
+    <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+   
+    <!--====== PRELOADER PART START ======-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-bottom ">
+        <img class="navbar-brand text-center" src="{%static 'style/images/art.png'%}" height="60" width="100">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbar-right" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="{%url 'homepage'%}">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="{%url 'about'%}">about</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="{%url 'stylee'%}">Get-started</a>
+            </li>
+           
+          </ul>
+        </div>
+      </nav>
+
+    
+
+
+  
+     
+        {%block content%}    {%endblock%}
+
+     <!--====== CONTACT PART START ======-->
+
+     <section id="contact" class="contact-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <div class="section-title text-center pb-30">
+                        <h3 class="title">Contact</h3>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+             <!-- row -->
+            <div class="contact-info pt-30">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-contact-info contact-color-1 mt-30 d-flex ">
+                            <div class="contact-info-icon">
+                                <i class="lni lni-map-marker"></i>
+                            </div>
+                            <div class="contact-info-content media-body">
+                                <p class="text"> ITM University,Gwalior<br>M.P ,INDIA</p>
+                            </div>
+                        </div> <!-- single contact info -->
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-contact-info contact-color-2 mt-30 d-flex ">
+                            <div class="contact-info-icon">
+                                <i class="lni lni-envelope"></i>
+                            </div>
+                            <div class="contact-info-content media-body">
+                                <p class="text">anandsiiiingh@gmail.com</p>
+                                <p class="text">support@styling.com</p>
+                            </div>
+                        </div> <!-- single contact info -->
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-contact-info contact-color-3 mt-30 d-flex ">
+                            <div class="contact-info-icon">
+                                <i class="lni lni-phone"></i>
+                            </div>
+                            <div class="contact-info-content media-body">
+                                <p class="text">+91 9801378400</p>
+                                <p class="text">+91 9575418223</p>
+                            </div>
+                        </div> <!-- single contact info -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- contact info -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact-wrapper form-style-two pt-115">
+                        <h4 class="contact-title pb-10"><i class="lni lni-envelope"></i> Leave <span>A Message.</span></h4>
+                        
+                        <form id="contact-form" action="assets/contact.php" method="post">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-input mt-25">
+                                        <label>Name</label>
+                                        <div class="input-items default">
+                                            <input name="name" type="text" placeholder="Name">
+                                            <i class="lni lni-user"></i>
+                                        </div>
+                                    </div> <!-- form input -->
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-input mt-25">
+                                        <label>Email</label>
+                                        <div class="input-items default">
+                                            <input type="email" name="email" placeholder="Email">
+                                            <i class="lni lni-envelope"></i>
+                                        </div>
+                                    </div> <!-- form input -->
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-input mt-25">
+                                        <label>Massage</label>
+                                        <div class="input-items default">
+                                            <textarea name="massage" placeholder="Massage"></textarea>
+                                            <i class="lni lni-pencil-alt"></i>
+                                        </div>
+                                    </div> <!-- form input -->
+                                </div>
+                                <p class="form-message"></p>
+                                <div class="col-md-12">
+                                    <div class="form-input light-rounded-buttons mt-30">
+                                        <button class="main-btn light-rounded-two">Send Message</button>
+                                    </div> <!-- form input -->
+                                </div>
+                            </div> <!-- row -->
+                        </form>
+                    </div> <!-- contact wrapper form -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== CONTACT PART ENDS ======-->
+    
+    <!--====== FOOTER PART START ======-->
+
+    <section class="footer-area footer-dark">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="footer-logo text-center">
+                        <a class="mt-30" href="index.html"><img class="navbar-brand" src="{%static 'style/images/art.png'%}" height="100" width="140"></a>
+                    </div> <!-- footer logo -->
+                    <ul class="social text-center mt-60">
+                        <li><a href="https://facebook.com/uideckHQ"><i class="lni lni-facebook-filled"></i></a></li>
+                        <li><a href="https://twitter.com/uideckHQ"><i class="lni lni-twitter-original"></i></a></li>
+                        <li><a href="https://instagram.com/uideckHQ"><i class="lni lni-instagram-original"></i></a></li>
+                        <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
+                    </ul> <!-- social -->
+                    <div class="footer-support text-center">
+                        <span class="number">+91 9801378400</span>
+                        <span class="mail">support@me.com</span>
+                    </div>
+                    <div class="copyright text-center mt-35">
+                        <p class="text">Designed by <bold style="text-decoration-color: deeppink">Aishwarya Anand</bold> </p>
+                    </div> <!--  copyright -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== FOOTER PART ENDS ======-->
+    
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->    
+
+    <!--====== PART START ======-->
+
+<!--
+    <section class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+
+    <!--====== PART ENDS ======-->
+
+
+
+
+    <!--====== Jquery js ======-->
+    <script src="{%static 'style/js/vendor/jquery-1.12.4.min.js'%}"></script>
+    <script src="{%static 'style/js/vendor/modernizr-3.7.1.min.js'%}"></script>
+    
+    <!--====== Bootstrap js ======-->
+    <script src="{%static 'style/js/popper.min.js'%}"></script>
+    <script src="{%static 'style/js/bootstrap.min.js'%}"></script>
+    
+    <!--====== Slick js ======-->
+<script src="{%static 'style/js/slick.min.js'%}"></script>
+    
+    <!--====== Magnific Popup js ======-->
+    <script src="{%static 'style/js/jquery.magnific-popup.min.js'%}"></script>
+    
+    <!--====== Ajax Contact js ======-->
+    <script src="{% static 'style/js/ajax-contact.js'%}"></script>
+    
+    <!--====== Isotope js ======-->
+    <script src="{%static 'style/js/imagesloaded.pkgd.min.js'%}"></script>
+    <script src="{% static 'style/js/isotope.pkgd.min.js'%}"></script>
+    
+    <!--====== Scrolling Nav js ======-->
+    <script src="{% static 'style/js/jquery.easing.min.js'%}"></script>
+    <script src="{% static 'style/js/scrolling-nav.js'%}"></script>
+    
+    <!--====== Main js ======-->
+    <script src="{%static 'style/js/main.js'%}"></script>
+    
+</body>
+
+</html>

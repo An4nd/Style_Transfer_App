@@ -1,0 +1,103 @@
+
+    
+    {% extends 'style/base.html' %}
+    {%load static%}
+    <!--====== SLIDER PART START ======-->
+{%block content%}
+    <section id="home" class="slider_area">
+        <div id="carouselThree" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselThree" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselThree" data-slide-to="1"></li>
+                <li data-target="#carouselThree" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="slider-content">
+                                   
+                                    <h1 class="title">Style Your Image</h1>
+                                    <p class="text">We blend insights and Images to create Artistic Images</p>
+                                    <ul class="slider-btn rounded-buttons">
+                                        <li><a class="main-btn rounded-one" href="{%url 'stylee'%}">GET STARTED</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> <!-- row -->
+                    </div> <!-- container -->
+                    <div class="slider-image-box d-none d-lg-flex align-items-end">
+                        <div class="slider-image">
+                            <img src="{% static 'style/images/slider/1.png'%}">
+                        </div> <!-- slider-imgae -->
+                    </div> <!-- slider-imgae box -->
+                </div> <!-- carousel-item -->
+
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="slider-content">
+                                    <h1 class="title">Crafted for Fun</h1>
+                                    <p class="text">We blend insights and Images to create Artistic Images</p>
+                                    <ul class="slider-btn rounded-buttons">
+                                        <li><a class="main-btn rounded-one" href="{%url 'stylee'%}">GET STARTED</a></li>
+                                        
+                                    </ul>
+                                </div> <!-- slider-content -->
+                            </div>
+                        </div> <!-- row -->
+                    </div> <!-- container -->
+                    <div class="slider-image-box d-none d-lg-flex align-items-end">
+                        <div class="slider-image">
+                            <img src="{%static 'style/images/slider/2.png'%}" >
+                        </div> <!-- slider-imgae -->
+                    </div> <!-- slider-imgae box -->
+                </div> <!-- carousel-item -->
+
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="slider-content">
+                                    <h1 class="title">Based on VGG-19 model </h1>
+                                    <p class="text">We blend insights and Images to create Artistic Images</p>
+                                    <ul class="slider-btn rounded-buttons">
+                                        <li><a class="main-btn rounded-one" href="{%url 'stylee'%}">GET STARTED</a></li>
+                                        
+                                    </ul>
+                                </div> <!-- slider-content -->
+                            </div>
+                        </div> <!-- row -->
+                    </div> <!-- container -->
+                    <div class="slider-image-box d-none d-lg-flex align-items-end">
+                        <div class="slider-image">
+                            <img src="{%static 'style/images/slider/3.png'%}" >
+                        </div> <!-- slider-imgae -->
+                    </div> <!-- slider-imgae box -->
+                </div> <!-- carousel-item -->
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselThree" role="button" data-slide="prev">
+                <i class="lni lni-arrow-left"></i>
+            </a>
+            <a class="carousel-control-next" href="#carouselThree" role="button" data-slide="next">
+                <i class="lni lni-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!--====== SLIDER PART ENDS ======-->
+    
+    
+    
+    {%endblock%}
+    
+   
+    
+    
+    
+   
