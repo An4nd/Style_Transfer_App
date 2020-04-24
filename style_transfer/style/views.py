@@ -37,3 +37,6 @@ def stylee(request):
 
 def about(request):
     return render(request,'style/about.html')
+
+def mail(request):
+    return render(request,'style/mail.html')

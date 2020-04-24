@@ -122,7 +122,8 @@
                     <div class="contact-wrapper form-style-two pt-115">
                         <h4 class="contact-title pb-10"><i class="lni lni-envelope"></i> Leave <span>A Message.</span></h4>
                         
-                        <form id="contact-form" action="assets/contact.php" method="post">
+                        <form id="contact-form" action="{%url 'mail'%}" method="post">
+                            {%csrf_token%}
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-input mt-25">
@@ -187,7 +188,15 @@
                         <span class="mail">support@me.com</span>
                     </div>
                     <div class="copyright text-center mt-35">
-                        <p class="text">Designed by <bold style="text-decoration-color: deeppink">Aishwarya Anand</bold> </p>
+                        <p class="text">Designed by </p>
+                        <p class="text"> <bold style="text-decoration-color: deeppink">-------</bold> </p>
+
+                        <p class="text"> <bold style="text-decoration-color: deeppink">Aishwarya Anand</bold> </p>
+                        <p class="text"> <bold style="text-decoration-color: deeppink">Dipesh Barnwal</bold> </p>
+                        <p class="text"> <bold style="text-decoration-color: deeppink">Shivam Shekhar</bold> </p>
+                        <p class="text"> <bold style="text-decoration-color: deeppink">Vijay Chowdhary</bold> </p>
+
+                        </p>
                     </div> <!--  copyright -->
                 </div>
             </div> <!-- row -->
